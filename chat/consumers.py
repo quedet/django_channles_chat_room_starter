@@ -67,7 +67,7 @@ class ChatConsumer(JsonWebsocketConsumer):
                     else:
                         room = Room.objects.filter(users_subscribed__in=[user_target,], is_group=False,).last()
                         if room and room.users_subscribed.count() == 1:
-                            self.add_client_to_rrom(room.name)
+                            self.add_client_to_room(room.name)
                         else:
                             self.add_client_to_room()
                 self.send_room_name()

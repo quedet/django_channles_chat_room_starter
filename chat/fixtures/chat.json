@@ -1,0 +1,133 @@
+[
+{
+  "model": "chat.client",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "channel": "specific..inmemory!fjJnDnTfttuG",
+    "created_at": "2022-09-24T10:19:30.307Z"
+  }
+},
+{
+  "model": "chat.client",
+  "pk": 3,
+  "fields": {
+    "user": 5,
+    "channel": "specific..inmemory!uoOOFUOkDTNg",
+    "created_at": "2022-09-24T10:20:11.386Z"
+  }
+},
+{
+  "model": "chat.client",
+  "pk": 4,
+  "fields": {
+    "user": 3,
+    "channel": "specific..inmemory!ncXCOHHssKPS",
+    "created_at": "2022-09-24T10:20:29.517Z"
+  }
+},
+{
+  "model": "chat.client",
+  "pk": 5,
+  "fields": {
+    "user": 2,
+    "channel": "specific..inmemory!VuNcDxtwzDEj",
+    "created_at": "2022-09-24T10:21:39.630Z"
+  }
+},
+{
+  "model": "chat.client",
+  "pk": 6,
+  "fields": {
+    "user": 4,
+    "channel": "specific..inmemory!GUvbfVSMdbAH",
+    "created_at": "2022-09-24T10:21:45.796Z"
+  }
+},
+{
+  "model": "chat.room",
+  "pk": 1,
+  "fields": {
+    "name": "hi",
+    "is_group": true,
+    "users_subscribed": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "clients_active": [
+      1,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "chat.room",
+  "pk": 2,
+  "fields": {
+    "name": "python",
+    "is_group": true,
+    "users_subscribed": [
+      3,
+      5
+    ],
+    "clients_active": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "chat.message",
+  "pk": 1,
+  "fields": {
+    "user": 5,
+    "room": 2,
+    "text": "helo",
+    "created_at": "2022-09-24T10:19:58.924Z"
+  }
+},
+{
+  "model": "chat.message",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "room": 2,
+    "text": "ok",
+    "created_at": "2022-09-24T10:20:42.304Z"
+  }
+},
+{
+  "model": "chat.message",
+  "pk": 3,
+  "fields": {
+    "user": 3,
+    "room": 2,
+    "text": "Bienvenue",
+    "created_at": "2022-09-24T10:20:48.449Z"
+  }
+},
+{
+  "model": "chat.message",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "room": 2,
+    "text": "Merci beaucoup les amis",
+    "created_at": "2022-09-24T10:21:01.890Z"
+  }
+},
+{
+  "model": "chat.message",
+  "pk": 5,
+  "fields": {
+    "user": 5,
+    "room": 2,
+    "text": "ok",
+    "created_at": "2022-09-24T10:21:06.168Z"
+  }
+}
+]
